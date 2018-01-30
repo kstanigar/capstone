@@ -1,0 +1,61 @@
+/*  Universal Styles  */
+html {
+  font-family: "Roboto", sans-serif;
+  font-size: 16px;
+}
+
+ul li a {
+text-decoration: none;
+color: inherit;
+}
+
+
+/*  Header  */
+
+.header-container {
+  position: fixed;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  border: 1px solid blue;
+}
+
+.logo-container {
+  font-size: 0;
+  display: flex;
+  align-items: center;
+  border: 1px solid orange;
+}
+
+.logo-container span{
+  font-size: 1rem;
+  text-transform: uppercase;
+  border: 1px solid green;
+}
+
+.logo-image {
+  margin: auto 1.5rem;
+  height: 2.5rem;
+  width: 2rem;
+}
+
+.name-first {
+  font-family: "Raleway", sans-serif;
+  font-weight: 700;
+}
+
+.name-second {
+  font-family: "Raleway", sans-serif;
+  color: grey;
+  font-weight: 400;
+}
+
+/*  Navigation Section  */
+.desktop ul {
+  max-width: 100%;
+  display: flex;
+  list-style-type: none;
+
+}
