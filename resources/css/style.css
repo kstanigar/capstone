@@ -2,6 +2,8 @@
 html {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
+  line-height: 2rem;
+  margin: 0 auto;
 }
 
 ul li a {
@@ -13,12 +15,11 @@ color: inherit;
 /*  Header  */
 
 .header-container {
-  position: fixed;
+  position: relative;
   z-index: 1;
   display: flex;
-  justify-content: space-between;
+  max-width: 100%;
   align-items: center;
-  width: 100%;
   border: 1px solid blue;
 }
 
@@ -32,18 +33,31 @@ color: inherit;
 .logo-container span{
   font-size: 1rem;
   text-transform: uppercase;
-  border: 1px solid green;
+
 }
 
 .logo-image {
-  margin: auto 1.5rem;
+  margin: 0 auto;
+  padding-left: 1.125rem;
+  padding-right: .25rem;
   height: 2.5rem;
   width: 2rem;
+  border-right: 2px solid;
+  /*  Border Gradient  */
+    -webkit-border-image:
+      -webkit-linear-gradient(black, rgba(0, 0, 0, 0)) 1 100%;
+    -moz-border-image:
+      -moz-linear-gradient(black, rgba(0, 0, 0, 0)) 1 100%;
+    -o-border-image:
+      -o-linear-gradient(black, rgba(0, 0, 0, 0)) 1 100%;
+    border-image:
+      linear-gradient(to bottom, black, rgba(0, 0, 0, 0)) 1 100%;
 }
 
 .name-first {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
+  margin-left: .25rem;
 }
 
 .name-second {
@@ -53,9 +67,42 @@ color: inherit;
 }
 
 /*  Navigation Section  */
-.desktop ul {
-  max-width: 100%;
-  display: flex;
-  list-style-type: none;
+.desktop {
+  width: 100%;
+  text-align: right;
+  margin-right: 1.125rem;
+}
 
+.desktop ul {
+  border: 1px solid green;
+  list-style-type: none;
+}
+
+.desktop ul li {
+  display: inline;
+  padding: 0.15rem 0.25rem;
+  margin-left: .5rem;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.mobile {
+  display: none;
+}
+
+
+
+@media only screen and (max-width: 760px) {
+  .desktop {
+    display: none;
+  }
+
+  .header-container {
+    width: 100%;
+  }
+
+  .mobile {
+    max-width: 100%;
+    display: inline;
+  }
 }
