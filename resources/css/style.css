@@ -18,6 +18,9 @@ color: inherit;
   margin: 0 auto;
 }
 
+.left-container {
+  width: 60%;
+}
 
 
 h1 {
@@ -96,7 +99,10 @@ h3 {
   font-weight: 400;
 }
 
+
+
 /*  Navigation Section  */
+
 .desktop {
   width: 100%;
   text-align: right;
@@ -104,7 +110,6 @@ h3 {
 }
 
 .desktop ul {
-  border: 1px solid green;
   list-style-type: none;
 }
 
@@ -155,7 +160,10 @@ h3 {
   }
 }*/
 
+
+
 /*  Main Content  */
+
 .content-container {
   width: 100%;
   margin: 0 1.5rem;
@@ -166,7 +174,7 @@ h3 {
   display: flex;
 }
 
-.left-container {
+.left-container-banner {
   background-image: url("../images/banner.jpg");
   width: 60%;
   height: 35rem;
@@ -190,7 +198,15 @@ h3 {
  }
 
  .banner-button {
-   margin-right: 1.5rem;
+   font-family: "Lato", sans-serif;
+   font-size: .5rem;
+   font-size: 1rem;
    border: 1px solid lime;
    padding: 0.5rem 9rem;
  }
+
+ .banner-button a {
+   font-size: 1.2rem;
+ }
+
+ /*  Information Section  */
