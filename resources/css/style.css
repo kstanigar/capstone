@@ -1,27 +1,56 @@
 /*  Universal Styles  */
-html {
+html, body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 2rem;
   margin: 0 auto;
+  opacity: 0.9;
 }
 
-ul li a {
+ul li a,
+.banner-button a {
 text-decoration: none;
 color: inherit;
 }
+
+.container {
+  width: 100%;
+  margin: 0 auto;
+}
+
+
+
+h1 {
+  font-family: "Lato", sans-serif;
+  font-weight: bold;
+  font-size: 3rem;
+  line-height: 3.70rem;
+  margin-top: 8rem;
+  margin-bottom: 0;
+}
+
+h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  padding-top: 0.60rem;
+  padding-bottom: 2rem;
+}
+
+
 
 
 /*  Header  */
 
 .header-container {
-  position: relative;
+  position: fixed;
   z-index: 1;
   height: 4rem;
   display: flex;
-  max-width: 100%;
+  width: 100%;
   align-items: center;
-  border: 1px solid blue;
+  margin: 0;
+  background-color: white;
+
 }
 
 .logo-container {
@@ -129,6 +158,39 @@ color: inherit;
 /*  Main Content  */
 .content-container {
   width: 100%;
+  margin: 0 1.5rem;
   padding-top: 65px;
-  margin: 0 auto;
 }
+
+.banner {
+  display: flex;
+}
+
+.left-container {
+  background-image: url("../images/banner.jpg");
+  width: 60%;
+  height: 35rem;
+  background-size: cover;
+  background-position: bottom center;
+  margin: 2rem 2.5rem 2rem 0;
+  border: 1px solid blue;
+}
+
+ img .mobile-image {
+   width: 60%;
+ }
+
+ .right-container {
+   width: 31%;
+   margin: 0 5rem 0 0;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   justify-content: flex-start;
+ }
+
+ .banner-button {
+   margin-right: 1.5rem;
+   border: 1px solid lime;
+   padding: 0.5rem 9rem;
+ }
