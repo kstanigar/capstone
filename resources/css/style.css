@@ -17,6 +17,7 @@ color: inherit;
 .header-container {
   position: relative;
   z-index: 1;
+  height: 4rem;
   display: flex;
   max-width: 100%;
   align-items: center;
@@ -92,17 +93,42 @@ color: inherit;
 
 
 
-@media only screen and (max-width: 760px) {
-  .desktop {
+/*@media only screen and (max-width: 760px) {
+  .desktop,
+  .logo-container {
     display: none;
+    border: 1px solid green;
   }
 
-  .header-container {
+  nav {
     width: 100%;
+    border: 1px solid green;
   }
 
   .mobile {
-    max-width: 100%;
-    display: inline;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0.75rem 0 0 0;
+    border: 1px solid purple;
   }
+
+  .mobile img {
+    height: 2.5rem;
+    width: 2rem;
+    margin: 0 auto;
+  }
+
+
+  .name-first,
+  .name-second {
+    display: none;
+  }
+}*/
+
+/*  Main Content  */
+.content-container {
+  width: 100%;
+  padding-top: 65px;
+  margin: 0 auto;
 }
