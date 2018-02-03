@@ -175,15 +175,14 @@ h3 {
 
  img .mobile-image {
    max-width: 60%;
-   height: auto;
  }
 
  .rt-container-banner {
    max-width: 30%;
-   margin: 0 5rem 0 0;
+   margin: 0;
    display: flex;
    flex-direction: column;
-   align-items: center;
+   align-items: flex-start;
    justify-content: flex-start;
    padding-top: 4rem;
  }
@@ -193,18 +192,23 @@ h3 {
    border: rgba(150,130,98, 0.5);
    padding: 0.5rem 8rem;
    color: white;
+   max-height: 2rem;
+   display: flex;
+   min-width: 2rem;
+   justify-content: center;
    background-color: rgba(38,40,56, 0.5);
  }
 
  .banner-button a {
    font-size: 1.2rem;
+   flex-shrink: 0;
  }
 
  #banner h1 {
    max-width: 100%;
    height: auto;
    font-size: 3rem;
-   line-height: 3.70rem;
+   line-height: 3.25rem;
    margin-bottom: 0;
  }
 
