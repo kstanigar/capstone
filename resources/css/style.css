@@ -4,7 +4,8 @@ html, body {
   font-size: 16px;
   line-height: 2rem;
   margin: 0 auto;
-  opacity: 0.9;
+  padding: 0;
+  opacity: 0.95;
 }
 
 ul li a,
@@ -13,33 +14,25 @@ text-decoration: none;
 color: inherit;
 }
 
-.container {
+.content-container {
   width: 100%;
-  margin: 0 auto;
-}
-
-.left-container {
-  width: 60%;
+  margin: 0;
+  padding: 4rem 0 0 0;
 }
 
 
 h1 {
-  font-family: "Lato", sans-serif;
+  font-family: "Lato", serif;
   font-weight: bold;
-  font-size: 3rem;
-  line-height: 3.70rem;
-  margin-top: 8rem;
-  margin-bottom: 0;
+  opacity: .95;
 }
 
 h3 {
+  font-family: "Roboto", serif;
   font-size: 1.5rem;
-  font-weight: bold;
-  padding-top: 0.60rem;
-  padding-bottom: 2rem;
+  font-weight: 700;
+  opacity: .80;
 }
-
-
 
 
 /*  Header  */
@@ -51,28 +44,27 @@ h3 {
   display: flex;
   width: 100%;
   align-items: center;
-  margin: 0;
+  margin: 0 auto;
   background-color: white;
-
+  /*border: 1px solid green;*/
 }
 
 .logo-container {
   font-size: 0;
   display: flex;
   align-items: center;
-  border: 1px solid orange;
+  /*border: 1px solid orange;*/
 }
 
 .logo-container span{
   font-size: 1rem;
   text-transform: uppercase;
-
 }
 
 .logo-image {
   margin: 0 auto;
   padding-left: 1.125rem;
-  padding-right: .25rem;
+  padding-right: .5rem;
   height: 2.5rem;
   width: 2rem;
   border-right: 2px solid;
@@ -90,7 +82,7 @@ h3 {
 .name-first {
   font-family: "Raleway", sans-serif;
   font-weight: 700;
-  margin-left: .25rem;
+  margin-left: 0.5rem;
 }
 
 .name-second {
@@ -98,7 +90,6 @@ h3 {
   color: grey;
   font-weight: 400;
 }
-
 
 
 /*  Navigation Section  */
@@ -162,51 +153,74 @@ h3 {
 
 
 
-/*  Main Content  */
-
-.content-container {
-  width: 100%;
-  margin: 0 1.5rem;
-  padding-top: 65px;
-}
-
-.banner {
+/*  Banner Section  */
+.container-a {
+  margin: 0;
   display: flex;
+  padding: 2rem 1.5rem;
+  color: rgb(30,30,31);
+  background-color: rgba(150,130,98, 0.2);
+  /*border: 1px solid orange;*/
 }
 
-.left-container-banner {
+.lt-container-banner {
   background-image: url("../images/banner.jpg");
   width: 60%;
-  height: 35rem;
+  height: 33rem;
   background-size: cover;
-  background-position: bottom center;
-  margin: 2rem 2.5rem 2rem 0;
-  border: 1px solid blue;
+  background-position: right center;
+  margin-right: 2.5rem;
+  border: 1px solid rgba(150,130,98, 0.5);
 }
 
  img .mobile-image {
-   width: 60%;
+   max-width: 60%;
+   height: auto;
  }
 
- .right-container {
-   width: 31%;
+ .rt-container-banner {
+   max-width: 30%;
    margin: 0 5rem 0 0;
    display: flex;
    flex-direction: column;
    align-items: center;
    justify-content: flex-start;
+   padding-top: 4rem;
  }
 
  .banner-button {
    font-family: "Lato", sans-serif;
-   font-size: .5rem;
-   font-size: 1rem;
-   border: 1px solid lime;
-   padding: 0.5rem 9rem;
+   border: rgba(150,130,98, 0.5);
+   padding: 0.5rem 8rem;
+   color: white;
+   background-color: rgba(38,40,56, 0.5);
  }
 
  .banner-button a {
    font-size: 1.2rem;
  }
 
+ #banner h1 {
+   max-width: 100%;
+   height: auto;
+   font-size: 3rem;
+   line-height: 3.70rem;
+   margin-bottom: 0;
+ }
+
+ #banner h3 {
+   max-width: 100%;
+   height: auto;
+   padding-bottom: 1rem;
+ }
+
  /*  Information Section  */
+
+ .container-b {
+   margin: 0;
+   display: flex;
+   padding: 2rem 1.5rem 0 1.5rem;
+   color: rgb(30,30,31);
+   /*background-color: rgba(150,130,98, 0.2);*/
+   border: 1px solid orange;
+ }
