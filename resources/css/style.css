@@ -3,6 +3,7 @@ html, body {
   font-family: "Roboto", sans-serif;
   font-size: 16px;
   line-height: 2rem;
+  color: rgb(30,30,31);
   margin: 0 auto;
   padding: 0;
   opacity: 0.95;
@@ -14,24 +15,59 @@ text-decoration: none;
 color: inherit;
 }
 
-.content-container {
-  width: 100%;
-  margin: 0;
-  padding: 4rem 0 0 0;
-}
-
 
 h1 {
   font-family: "Lato", serif;
   font-weight: bold;
+  font-size: 3rem;
+  line-height: 3.25rem;
   opacity: .95;
+}
+
+h2 {
+  font-size: 2rem;
+  font-weight: 800;
+  color: rgba(30,30,31,0.93);
 }
 
 h3 {
   font-family: "Roboto", serif;
   font-size: 1.5rem;
   font-weight: 700;
+  color: rgba(30,30,31,0.9);
   opacity: .80;
+}
+
+h5 {
+  margin: 0 auto;
+  padding-top: 2.1rem;
+  color: rgba(30,30,31,0.9);
+  /*border: 1px solid blue;*/
+}
+
+blockquote {
+  margin: 0 auto;
+  font-family: "Crete Round", Sans;
+  font-style: italic;
+  color: rgba(30,30,31,0.8);
+  /*border: 1px solid green;*/
+
+}
+
+.content-container {
+  width: 100%;
+  margin: 0;
+  padding: 4rem 0 0 0;
+}
+
+.info-card {
+  width: 100%;
+  display:  inline-block;
+  /*flex-direction: column;*/
+  align-items: center;
+  justify-content: space-around;
+  flex-wrap: wrap;
+
 }
 
 
@@ -46,7 +82,6 @@ h3 {
   align-items: center;
   margin: 0 auto;
   background-color: white;
-  /*border: 1px solid green;*/
 }
 
 .logo-container {
@@ -158,8 +193,15 @@ h3 {
   margin: 0;
   display: flex;
   padding: 2rem 1.5rem;
-  color: rgb(30,30,31);
-  background-color: rgba(150,130,98, 0.2);
+  /*color: rgb(30,30,31);*/
+  background-color: rgba(150,130,98, 0.2); /* backup color */
+  background: rgba(255,255,255,1);
+  background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(208,181,139,1) 0%, rgba(249,244,235,1) 59%, rgba(249,244,235,1) 100%);
+  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(208,181,139,1) 0%, rgba(249,244,235,1) 59%, rgba(249,244,235,1) 100%);
+  background: -o-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(208,181,139,1) 0%, rgba(249,244,235,1) 59%, rgba(249,244,235,1) 100%);
+  background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(208,181,139,1) 0%, rgba(249,244,235,1) 59%, rgba(249,244,235,1) 100%);
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(208,181,139,1) 0%, rgba(249,244,235,1) 59%, rgba(249,244,235,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f9f4eb', GradientType=0 );
   /*border: 1px solid orange;*/
 }
 
@@ -179,7 +221,7 @@ h3 {
 
  .rt-container-banner {
    max-width: 30%;
-   margin: 0;
+   margin: 0 auto;
    display: flex;
    flex-direction: column;
    align-items: flex-start;
@@ -207,8 +249,6 @@ h3 {
  #banner h1 {
    max-width: 100%;
    height: auto;
-   font-size: 3rem;
-   line-height: 3.25rem;
    margin-bottom: 0;
  }
 
@@ -221,10 +261,42 @@ h3 {
  /*  Information Section  */
 
  .container-b {
-   margin: 0;
+   margin: 0 auto;
    display: flex;
    padding: 2rem 1.5rem 0 1.5rem;
    color: rgb(30,30,31);
-   /*background-color: rgba(150,130,98, 0.2);*/
    border: 1px solid orange;
+ }
+
+.lt-container-info {
+  max-width: 60%;
+  border: 1px solid pink;
+}
+
+ .info-image {
+   width: 100%;
+   height: auto;
+   border: 1px solid blue;
+ }
+
+ #info h2 {
+   margin: 0 auto;
+   font-weight: 700;
+   padding: 1.3rem 0 1.5rem 0;
+   background-color: rgba(83,91,107, 0.2);
+  background: rgba(252,252,252,1);
+  background: -moz-linear-gradient(left, rgba(252,252,252,1) 0%, rgba(240,240,240,1) 0%, rgba(230,230,230,1) 4%, rgba(255,255,255,1) 100%);
+  background: -webkit-linear-gradient(left, rgba(252,252,252,1) 0%, rgba(240,240,240,1) 0%, rgba(230,230,230,1) 4%, rgba(255,255,255,1) 100%);
+  background: -o-linear-gradient(left, rgba(252,252,252,1) 0%, rgba(240,240,240,1) 0%, rgba(230,230,230,1) 4%, rgba(255,255,255,1) 100%);
+  background: -ms-linear-gradient(left, rgba(252,252,252,1) 0%, rgba(240,240,240,1) 0%, rgba(230,230,230,1) 4%, rgba(255,255,255,1) 100%);
+  background: linear-gradient(to right, rgba(252,252,252,1) 0%, rgba(240,240,240,1) 0%, rgba(230,230,230,1) 4%, rgba(255,255,255,1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#ffffff', GradientType=1 );
+   /*background: rgba(224,239,249,1);*/
+   /*border: 1px solid red;*/
+ }
+
+ .rt-container-info {
+   max-width: 40%;
+   display: inline;
+
  }
