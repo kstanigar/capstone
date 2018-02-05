@@ -40,15 +40,16 @@ h3 {
 
 h5 {
   margin: 0 auto;
-  padding-top: 2.1rem;
+  padding-top: 1rem;
   color: rgba(30,30,31,0.9);
-  /*border: 1px solid blue;*/
+  border: 1px solid blue;
 }
 
 blockquote {
   margin: 0 auto;
   font-family: "Crete Round", Sans;
   font-style: italic;
+  line-height: 1.4rem;
   color: rgba(30,30,31,0.8);
   /*border: 1px solid green;*/
 
@@ -56,18 +57,19 @@ blockquote {
 
 .content-container {
   width: 100%;
-  margin: 0;
+  margin: 0 auto;
   padding: 4rem 0 0 0;
 }
 
 .info-card {
-  width: 100%;
-  display:  inline-block;
-  /*flex-direction: column;*/
+  max-width: 100%;
+  height: auto;
+  display: flex;
   align-items: center;
-  justify-content: space-around;
-  flex-wrap: wrap;
-
+  justify-content: flex-start;
+  padding: 1rem 0 1rem 1rem;
+  margin-bottom: 1rem;
+  border: 1px solid green;
 }
 
 
@@ -139,7 +141,7 @@ blockquote {
   list-style-type: none;
 }
 
-.desktop ul li {
+.desktop > ul li {
   display: inline;
   padding: 0.15rem 0.25rem;
   margin-left: .5rem;
@@ -192,7 +194,8 @@ blockquote {
 .container-a {
   margin: 0;
   display: flex;
-  padding: 2rem 1.5rem;
+  justify-content: flex-start;
+  padding: 2rem 0;
   /*color: rgb(30,30,31);*/
   background-color: rgba(150,130,98, 0.2); /* backup color */
   background: rgba(255,255,255,1);
@@ -209,24 +212,33 @@ blockquote {
   background-image: url("../images/banner.jpg");
   width: 60%;
   height: 33rem;
+  margin: 0 1.5rem;
   background-size: cover;
-  background-position: right center;
-  margin-right: 2.5rem;
-  border: 1px solid rgba(150,130,98, 0.5);
+  background-position: left center;
+  background-repeat: no-repeat;
+  /*margin-right: 2.5rem;*/
+  /*border: 1px solid rgba(150,130,98, 0.5);*/
+  border: 1px solid green;
 }
 
  img .mobile-image {
-   max-width: 60%;
+   max-width: 100%;
+   margin: 0;
+   overflow: auto;
+   /*padding-right: 1.5rem;*/
+   border: 1px solid red;
  }
 
  .rt-container-banner {
    max-width: 30%;
-   margin: 0 auto;
+   margin-left: 1rem;
    display: flex;
    flex-direction: column;
    align-items: flex-start;
    justify-content: flex-start;
    padding-top: 4rem;
+   overflow: auto;
+   border: 1px solid purple;
  }
 
  .banner-button {
@@ -258,45 +270,71 @@ blockquote {
    padding-bottom: 1rem;
  }
 
+
  /*  Information Section  */
 
  .container-b {
-   margin: 0 auto;
+   margin: 0;
    display: flex;
-   padding: 2rem 1.5rem 0 1.5rem;
+   justify-content: flex-start;
+   padding: 1rem 0 2rem 0;
    color: rgb(30,30,31);
    border: 1px solid orange;
  }
 
 .lt-container-info {
   max-width: 60%;
+  margin: 1rem .5rem 0 1.5rem;
   border: 1px solid pink;
 }
 
  .info-image {
    width: 100%;
    height: auto;
+   margin: 0;
    border: 1px solid blue;
  }
 
  #info h2 {
    margin: 0 auto;
    font-weight: 700;
-   padding: 1.3rem 0 1.5rem 0;
+   padding: 1.1rem 0 1.4rem 0;
    background-color: rgba(83,91,107, 0.2);
-  background: rgba(252,252,252,1);
-  background: -moz-linear-gradient(left, rgba(252,252,252,1) 0%, rgba(240,240,240,1) 0%, rgba(230,230,230,1) 4%, rgba(255,255,255,1) 100%);
-  background: -webkit-linear-gradient(left, rgba(252,252,252,1) 0%, rgba(240,240,240,1) 0%, rgba(230,230,230,1) 4%, rgba(255,255,255,1) 100%);
-  background: -o-linear-gradient(left, rgba(252,252,252,1) 0%, rgba(240,240,240,1) 0%, rgba(230,230,230,1) 4%, rgba(255,255,255,1) 100%);
-  background: -ms-linear-gradient(left, rgba(252,252,252,1) 0%, rgba(240,240,240,1) 0%, rgba(230,230,230,1) 4%, rgba(255,255,255,1) 100%);
-  background: linear-gradient(to right, rgba(252,252,252,1) 0%, rgba(240,240,240,1) 0%, rgba(230,230,230,1) 4%, rgba(255,255,255,1) 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fcfcfc', endColorstr='#ffffff', GradientType=1 );
-   /*background: rgba(224,239,249,1);*/
-   /*border: 1px solid red;*/
+   background: rgba(158,97,158,1);
+    background: -moz-linear-gradient(left, rgba(158,97,158,1) 0%, rgba(226,212,226,1) 0%, rgba(255,255,255,1) 100%);
+    background: -webkit-linear-gradient(left, rgba(158,97,158,1) 0%, rgba(226,212,226,1) 0%, rgba(255,255,255,1) 100%);
+    background: -o-linear-gradient(left, rgba(158,97,158,1) 0%, rgba(226,212,226,1) 0%, rgba(255,255,255,1) 100%);
+    background: -ms-linear-gradient(left, rgba(158,97,158,1) 0%, rgba(226,212,226,1) 0%, rgba(255,255,255,1) 100%);
+    background: linear-gradient(to right, rgba(158,97,158,1) 0%, rgba(226,212,226,1) 0%, rgba(255,255,255,1) 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9e619e', endColorstr='#ffffff', GradientType=1 );
+
  }
 
  .rt-container-info {
-   max-width: 40%;
+   width: 40%;
+   margin: 0;
+   padding-left: 1rem;
    display: inline;
+ }
 
+ .info-card img {
+   max-width: 35%;
+ }
+
+ .info-text {
+   max-width: 60%;
+   margin: 0;
+   display: flex;
+   flex-direction: column;
+   justify-content: flex-start;
+   align-items: flex-start;
+   padding-left: 1rem;
+ }
+
+ .info-text a,
+ .info-text p,
+ .info-text h3 {
+   margin: .25rem;
+   line-height: 1rem;
+   border: 1px solid red;
  }
