@@ -72,6 +72,10 @@ blockquote {
   border: 1px solid green;
 }
 
+.info-text a {
+  text-decoration: none;
+}
+
 
 /*  Header  */
 
@@ -141,7 +145,7 @@ blockquote {
   list-style-type: none;
 }
 
-.desktop > ul li {
+.desktop ul li {
   display: inline;
   padding: 0.15rem 0.25rem;
   margin-left: .5rem;
