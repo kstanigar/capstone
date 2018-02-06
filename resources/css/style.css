@@ -10,7 +10,8 @@ html, body {
 }
 
 ul li a,
-.banner-button a {
+.banner-button a,
+.course-text a {
 text-decoration: none;
 color: inherit;
 }
@@ -40,7 +41,7 @@ h3 {
 
 h5 {
   margin: 0 auto;
-  padding-top: 1rem;
+  padding-top: 1.5rem;
   color: rgba(30,30,31,0.9);
   border: 1px solid blue;
 }
@@ -332,7 +333,7 @@ blockquote {
    flex-direction: column;
    justify-content: flex-start;
    align-items: flex-start;
-   padding-left: 1rem;
+   padding: 1rem;
  }
 
  .info-text a,
@@ -341,4 +342,35 @@ blockquote {
    margin: .25rem;
    line-height: 1rem;
    border: 1px solid red;
+ }
+
+ .info-card:nth-child(3n){
+ background: rgba(30,30,31,0.1);
+ }
+
+ /* Courses Section  */
+
+ .container-c {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   Align-items: center;
+   margin: 0 4.5rem;
+   border: 1px solid red;
+ }
+
+ .course-container {
+   max-width: 100%;
+   display: flex;
+   flex-wrap: wrap;
+   justify-content: space-between;
+   align-items: flex-start;
+ }
+
+ .course {
+   max-width: 30%;
+ }
+
+ .course-image img {
+   max-width: 100%;
  }
