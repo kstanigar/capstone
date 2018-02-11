@@ -66,21 +66,10 @@ blockquote {
   padding: 4rem 0 0 0;
 }
 
-.info-card {
-  max-width: 100%;
-  height: auto;
-  display: flex;
-  align-items: center;
-  justify-content: flex-start;
-  padding: 1rem 0 1rem 1rem;
-  margin-bottom: 1rem;
-  border: 1px solid green;
-}
 
 .info-text a {
   text-decoration: none;
 }
-
 
 
 /*  Header  */
@@ -167,42 +156,9 @@ blockquote {
 
 
 
-/*@media only screen and (max-width: 760px) {
-  .desktop,
-  .logo-container {
-    display: none;
-    border: 1px solid green;
-  }
-
-  nav {
-    width: 100%;
-    border: 1px solid green;
-  }
-
-  .mobile {
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    margin: 0.75rem 0 0 0;
-    border: 1px solid purple;
-  }
-
-  .mobile img {
-    height: 2.5rem;
-    width: 2rem;
-    margin: 0 auto;
-  }
-
-
-  .name-first,
-  .name-second {
-    display: none;
-  }
-}*/
-
-
 
 /*  Banner Section  */
+
 .container-a {
   margin: 0;
   display: flex;
@@ -228,7 +184,6 @@ blockquote {
   background-size: 100%;
   background-position: 50% 50%;
   background-repeat: no-repeat;
-  border: 1px solid rgba(150,130,98, 0.5);
 }
 
  img .mobile-image {
@@ -256,14 +211,16 @@ blockquote {
    border-radius: 0.5rem;
    padding: 0.5rem 8rem;
    color: white;
-   margin-left: 1rem;
-   max-height: 2rem;
+   margin: 0 1rem 0 1rem;
+   max-width: : 8rem;
    display: flex;
    min-width: 1rem;
    justify-content: center;
    flex-shrink: 2;
    background-color: rgba(38,40,56, 0.5);
+   /*border: 1px solid rgba(150,130,98, 0.2);*/
  }
+
 
  .banner-button a {
    font-size: 1.2rem;
@@ -292,13 +249,14 @@ h1.first-line {
  #banner h3 {
    max-width: 100%;
    height: auto;
+   text-align: right;
    font-family: "Lato", serif;
    font-style: italic;
    line-height: 1.1rem;
    font-size: 1.1rem;
    font-weight: 400;
-   padding: 0.4rem 0.8rem 0.4rem 0;
-   margin: 1.6rem 0 7rem 0;
+   padding: 0.4rem 0.8rem 0.4rem 2.5rem;
+   margin: 1.6rem 0 4rem 0;
    background-color: rgba(158,97,158,1);
    background: -moz-linear-gradient(left, rgba(158,97,158,1) 0%, rgba(226,212,226,1) 0%, rgba(255,255,255,1) 100%);
    background: -webkit-linear-gradient(left, rgba(158,97,158,1) 0%, rgba(226,212,226,1) 0%, rgba(255,255,255,1) 100%);
@@ -307,8 +265,6 @@ h1.first-line {
    background: linear-gradient(to right, rgba(158,97,158,1) 0%, rgba(226,212,226,1) 0%, rgba(255,255,255,1) 100%);
    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9e619e', endColorstr='#ffffff', GradientType=1 );
  }
-
-
 
 
 
@@ -329,7 +285,7 @@ h1.first-line {
 }
 
  .info-image {
-   width: 100%;
+   max-width: 100%;
    height: auto;
    margin: 0;
    border: 1px solid blue;
@@ -338,7 +294,8 @@ h1.first-line {
  #info h2 {
    margin: 0 0 0.25rem 0;
    font-weight: 700;
-   padding: 2.3rem 0 2rem 0;
+   line-height: 2rem;
+   padding: 1.1rem 0 0.8rem 0;
    background-color: rgba(83,91,107, 0.2);
    background: rgba(158,97,158,1);
     background: -moz-linear-gradient(left, rgba(158,97,158,1) 0%, rgba(226,212,226,1) 0%, rgba(255,255,255,1) 100%);
@@ -347,14 +304,29 @@ h1.first-line {
     background: -ms-linear-gradient(left, rgba(158,97,158,1) 0%, rgba(226,212,226,1) 0%, rgba(255,255,255,1) 100%);
     background: linear-gradient(to right, rgba(158,97,158,1) 0%, rgba(226,212,226,1) 0%, rgba(255,255,255,1) 100%);
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9e619e', endColorstr='#ffffff', GradientType=1 );
+ }
 
+ .info-card h3 {
+   text-align: left;
  }
 
  .rt-container-info {
    width: 40%;
-   margin: 0;
-   padding-left: 1rem;
+   margin: 0 0 0 1rem;
+   /*padding-left: 1rem;*/
    display: inline;
+   border: 1px solid blue;
+ }
+
+ .info-card {
+   max-width: 100%;
+   height: auto;
+   display: flex;
+   align-items: center;
+   justify-content: flex-start;
+   padding: 1rem 0 1rem 1rem;
+   margin-bottom: 1rem;
+   border: 1px solid green;
  }
 
  .info-card img {
@@ -368,19 +340,21 @@ h1.first-line {
    flex-direction: column;
    justify-content: flex-start;
    align-items: flex-start;
-   padding: 1rem;
+   padding: 1rem 0 1rem 1rem;
+   border: 1px solid yellow;
  }
 
  .info-text a,
  .info-text p,
- .info-text > h3 {
+ .info-text h3 {
    margin: .25rem;
    line-height: 1rem;
    border: 1px solid red;
  }
 
  .info-card:nth-child(3n){
- background-color: rgba(30,30,31,0.1);
+   background-color: rgba(124,119,158,0.2)
+ /*background-color: rgba(30,30,31,0.1);*/
  }
 
  h5 {
@@ -442,7 +416,7 @@ h1.first-line {
    line-height: 1.5rem;
    margin: 0.5rem 0 0 0;
    padding: 0;
-   border: 1px solid green;
+   /*border: 1px solid green;*/
  }
 
  .course:nth-child(3),
@@ -502,7 +476,7 @@ h1.first-line {
 .lt-container-exhibit h4 {
   text-transform: capitalize;
   margin: 0;
-  padding: 1.9rem 0 1.3rem 0;
+  padding: 1.6rem 0 1.3rem 0;
   background-color: rgba(83,91,107, 0.2);
   background: rgba(158,97,158,1);
    background: -moz-linear-gradient(left, rgba(158,97,158,1) 0%, rgba(226,212,226,1) 0%, rgba(255,255,255,1) 100%);
@@ -511,7 +485,6 @@ h1.first-line {
    background: -ms-linear-gradient(left, rgba(158,97,158,1) 0%, rgba(226,212,226,1) 0%, rgba(255,255,255,1) 100%);
    background: linear-gradient(to right, rgba(158,97,158,1) 0%, rgba(226,212,226,1) 0%, rgba(255,255,255,1) 100%);
    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#9e619e', endColorstr='#ffffff', GradientType=1 );
-
   border: 1px solid blue;
 }
 
@@ -547,7 +520,9 @@ h1.first-line {
 }
 
 
+
 /*   Footer Section   */
+
 .footer {
   margin: 0;
   max-width: 100%;
@@ -564,3 +539,209 @@ h1.first-line {
   display: inline-block;
   margin-right: 0.5rem;
 }
+
+
+/*   Media Query   */
+@media only screen and (max-width: 1100px) {
+  .banner-button {
+    padding: 1.5rem 6rem;
+    border: 1px solid blue;
+    margin-top: 1rem;
+  }
+
+  #banner h3 {
+    font-size: 1rem;
+    padding: 0.4rem 0.8rem 0.4rem 1.5rem;
+  }
+
+  .course-text  {
+    padding: 0 0.25rem 0.25rem 0.25rem;
+  }
+
+  .course:nth-child(3) {
+    padding-bottom: 1rem;
+  }
+
+  .course:nth-child(1) {
+    padding-bottom: 1rem;
+  }
+
+  .course-text p {
+    line-height: 1rem;
+    font-size: 0.9rem;
+  }
+
+  .lt-container-exhibit video {
+    height: 28rem;
+  }
+
+}
+
+
+@media only screen and (max-width: 850px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h3,
+  .info-text h4 {
+    font-size: 1.1rem;
+  }
+
+  h4 {
+    font-size: 0.8rem;
+  }
+
+  p,
+  .course-text p {
+    font-size: 0.8rem;
+  }
+
+  blockquote,
+  #banner h3 {
+    font-size: 0.9rem;
+  }
+
+  .content-d h4 {
+    font-size: 1.3rem;
+  }
+
+  .lt-container-exhibit video {
+    height: 25rem;
+  }
+
+  .copyright,
+  li {
+    font-size: 0.9rem;
+  }
+  .banner-button {
+    padding: 1.2rem 3.5rem;
+    border: 1px solid blue;
+    margin-top: 1rem;
+  }
+
+
+}
+
+
+
+@media only screen and (max-width: 760px) {
+  .desktop,
+  .logo-container {
+    display: none;
+    border: 1px solid green;
+  }
+
+  nav {
+    width: 100%;
+    border: 1px solid green;
+  }
+
+  .mobile {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin: 0.75rem 0 0 0;
+  }
+
+  .mobile img {
+    height: 2.5rem;
+    width: 2rem;
+    margin: 0 auto;
+  }
+
+
+  .name-first,
+  .name-second {
+    display: none;
+  }
+
+  .rt-container-banner {
+    padding-top: 2rem;
+  }
+
+
+  .rt-container-info {
+    display: block;
+
+  }
+  .rt-container-info .info-card {
+    display: block;
+    text-align: center;
+    padding: 1rem;
+    margin: 0;
+
+  }
+
+  .rt-container-info .info-card img {
+    height: 8rem;
+    max-width: 100%;
+    object-fit: fill;
+    transform: scaleX(1.5);
+    /*padding-right: 0.8rem;*/
+    }
+
+    .rt-container-exhibit .info-card p {
+      display: none;
+    }
+
+    .rt-container-info .info-card h3 {
+      text-align: left;
+      margin: 0;
+      padding: 0;
+    }
+
+    .info-text {
+      max-width: 100%;
+      padding: 0.5rem 0 0.5rem 0.5rem;
+      text-align: left;
+    }
+
+    .course p,
+    .course h4 {
+      display: none;
+    }
+
+    .course h3 {
+      font-size: 1rem;
+    }
+
+    .course:nth-child(2) {
+      padding-bottom: 1rem;
+    }
+
+    .lt-container-exhibit video {
+      height: 20rem;
+    }
+
+  }
+
+  @media only screen and (max-width: 680px) {
+
+    .lt-container-info {
+      display: none;
+    }
+
+    .container-b {
+      margin: 0 auto;
+      display: flex;
+      justify-content: center;
+      border: 1px solid purple;
+    }
+
+
+    .rt-container-info {
+      width: 80%;
+      text-align: center;
+      margin-right: 1rem;
+    }
+
+    .rt-container-info .info-text p {
+      display: inherit;
+    }
+
+  }
