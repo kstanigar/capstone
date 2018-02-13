@@ -29,7 +29,7 @@ h1 {
 h2 {
   text-transform: capitalize;
   font-family: "Open Sans", serif;
-  font-size: 2rem;
+  font-size: 2.4rem;
   font-weight: 900;
   color: rgba(30,30,31,0.93);
 }
@@ -82,8 +82,6 @@ blockquote {
   width: 100%;
   align-items: center;
   margin: 0 auto;
-  /*background-color: white;*/
-  /*background-color: rgb(255,252,243);*/
   background-color: rgb(243,245,242);
 }
 
@@ -130,6 +128,7 @@ blockquote {
 }
 
 
+
 /*  Navigation Section  */
 
 .desktop {
@@ -153,7 +152,6 @@ blockquote {
 .mobile {
   display: none;
 }
-
 
 
 
@@ -184,13 +182,9 @@ blockquote {
   background-size: 100%;
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  flex-shrink: 3;
 }
 
- /*img .mobile-image {
-   margin: 0;
-   height: auto;
-   /*padding-right: 1.5rem;
- }*/
 
  .rt-container-banner {
    max-width: 30%;
@@ -209,7 +203,7 @@ blockquote {
    font-family: "Lato", sans-serif;
    border: rgba(150,130,98, 0.5);
    border-radius: 0.5rem;
-   padding: 0.5rem 8rem;
+   padding: 1.5rem 8rem;
    color: white;
    margin: 0 1rem 0 1rem;
    max-width: : 8rem;
@@ -365,6 +359,10 @@ h1.first-line {
    border: 1px solid blue;
  }
 
+ .mobile-photo {
+   display: none;
+ }
+
 
 
 
@@ -440,7 +438,6 @@ h1.first-line {
    padding: 0 0 1.8rem 0;
    color: rgb(30,30,31);
    border: 1px solid orange;
-
  }
 
  .lt-container-exhibit {
@@ -532,7 +529,6 @@ h1.first-line {
   padding: 1rem 1.5rem 2.5rem 1.5rem;
   border-top: 1px solid rgba(30,30,31,0.2);
   background-color: rgba(207,174,99,0.2);
-
 }
 
 .footer ul li {
@@ -554,7 +550,7 @@ h1.first-line {
 
   #banner h3 {
     font-size: 1rem;
-    padding: 0.4rem 0.8rem 0.4rem 1.5rem;
+    padding: 0.4rem 0.8rem 0.4rem 1rem;
   }
 
   .course-text  {
@@ -587,17 +583,13 @@ h1.first-line {
   }
 
   h2 {
-    font-size: 1.5rem;
+    font-size: 1.8rem;
   }
 
   h3,
   .info-text h4 {
     font-size: 1.1rem;
   }
-
-  /*h4 {
-    font-size: 0.8rem;
-  }*/
 
   h4,
   p,
@@ -620,13 +612,8 @@ h1.first-line {
     height: 25rem;
   }
 
-  /*.copyright,
-  li {
-    font-size: 0.9rem;
-  }*/
   .banner-button {
     padding: 1.2rem 3.5rem;
-    border: 1px solid blue;
     margin-top: 1rem;
   }
 
@@ -636,52 +623,42 @@ h1.first-line {
     text-align: left;
   }
 
-  /*.rt-container-banner {
-    padding-top: 2rem;
-  }
 
+  /*  Information Change  */
 
   .rt-container-info {
-    display: block;
-
-  }
-  .rt-container-info .info-card {
-    display: block;
-    text-align: center;
-    padding: 1rem;
-    margin: 0;
-
-  }
-
-  .rt-container-info .info-card img {
-    height: 8rem;
-    max-width: 100%;
-    object-fit: fill;
-    /*transform: scaleX(1.5);*/
-    /*padding-right: 0.8rem;
+      display: block;
     }
 
-    .rt-container-exhibit .info-card p {
+  .rt-container-info .info-card {
+      display: block;
+      text-align: center;
+      padding: 1rem;
+    }
+
+  .desktop-photo {
       display: none;
     }
 
-    .rt-container-info .info-card h3 {
-      text-align: left;
-      margin: 0;
-      padding: 0;
-    }*/
+  .mobile-photo {
+      display: inherit;
+      height: auto;
+      border: 1px solid purple;
+    }
 
-
-
+  .rt-container-info .info-card img {
+      max-width: 100%;
+    }
 
 }
 
 
 
-@media only screen and (max-width: 760px) {
+@media only screen and (max-width: 750px) {
+
   .desktop {
     display: none;
-    border: 1px solid green;
+    /*border: 1px solid green;*/
   }
 
 
@@ -700,6 +677,12 @@ h1.first-line {
 
   h1 {
     font-size: 2.2rem;
+    line-height: 2.5rem;
+    margin-top: 4rem;
+  }
+
+  #banner h3 {
+    margin-bottom: 4rem;
   }
 
   nav {
@@ -712,71 +695,58 @@ h1.first-line {
     justify-content: space-around;
     align-items: center;
     margin: 0;
+    max-width: 100%;
   }
-
-
 
   .rt-container-banner {
     padding-top: 2rem;
   }
 
 
-  .rt-container-info {
-    display: block;
 
-  }
-  .rt-container-info .info-card {
-    display: block;
-    text-align: center;
-    padding: 1rem;
-    margin: 0;
+  /*  Exhibit Section  */
 
-  }
+  .rt-container-exhibit .info-card p {
+    display: none;
+    }
 
-  .rt-container-info .info-card img {
-    height: 8rem;
+  .rt-container-info .info-card h3 {
+    text-align: left;
+    margin: 0.3rem 0.2rem;
+    padding: 0;
+    }
+
+  .info-text {
     max-width: 100%;
-    object-fit: fill;
-    /*transform: scaleX(1.5);*/
-    /*padding-right: 0.8rem;*/
+    padding: 0.5rem 0.5rem;
+    text-align: left;
     }
 
-    .rt-container-exhibit .info-card p {
-      display: none;
+  .lt-container-exhibit video {
+    height: 20rem;
     }
 
-    .rt-container-info .info-card h3 {
-      text-align: left;
-      margin: 0.3rem 0.2rem;
-      padding: 0;
+
+
+  /*  Course Section  */
+
+  .course p,
+  .course h4 {
+    display: none;
     }
 
-    .info-text {
-      max-width: 100%;
-      padding: 0.5rem 0 0.5rem 0.5rem;
-      text-align: left;
+  .course h3 {
+    font-size: 1.2rem;
     }
 
-    .course p,
-    .course h4 {
-      display: none;
+  .course:nth-child(2) {
+    padding-bottom: 1rem;
     }
-
-    .course h3 {
-      font-size: 1rem;
-    }
-
-    .course:nth-child(2) {
-      padding-bottom: 1rem;
-    }
-
-    .lt-container-exhibit video {
-      height: 20rem;
-    }
-
   }
 
-@media only screen and (max-width: 665px) {
+
+
+@media only screen and (max-width: 750px) {
   .course:nth-child(1) {
     padding-bottom: 0;
   }
@@ -811,13 +781,26 @@ h1.first-line {
       padding: 0;
     }
 
+
     /*  Banner  */
+
+    h1 {
+      margin-top: 2rem;
+      font-size: 3.3rem;
+    }
+
+    #banner h3 {
+      margin-left: 7rem;
+      font-size: 1.2rem;
+      line-height: 1.3rem;
+      margin-bottom: 1.5rem;
+    }
 
     .container-a {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      padding-top: 0;
+      padding: 0;
       margin-top: 0;
       border: 1px solid pink;
     }
@@ -845,12 +828,19 @@ h1.first-line {
       padding: 0;
     }
 
+    .banner-button {
+      padding: 1.5rem 8rem;
+      margin: 2rem auto;
+
+    }
+
 
 
     /*  Information  */
 
     .container-b {
       margin: 0 auto;
+      padding: 1 0 0 0;
       display: flex;
       justify-content: center;
       border: 1px solid purple;
@@ -861,25 +851,136 @@ h1.first-line {
     }
 
     .rt-container-info {
-      width: 60%;
+      width: 100%;
       align-items: center;
       text-align: center;
       margin-right: 1rem;
     }
 
-    .rt-container-info .info-text p {
-      display: inherit;
+    .info-text h3,
+    .info-text p,
+    .info-text a {
+      line-height: 1.5rem;
     }
+
+    .rt-container-info .info-text h3 {
+      font-size: 1.7rem;
+    }
+
+    .rt-container-info .info-text p,
+    .rt-container-info .info-text a {
+      display: inherit;
+      font-size: 1.1rem;
+    }
+
 
     .rt-container-info .info-text {
-      max-width: 60%;
-      margin-left: 3rem;
+      max-width: 100%;
+      margin-left: 1rem;
+      padding: 4rem 0;
     }
 
+
     .rt-container-info .info-card img {
-      height: 8rem;
       max-width: 100%;
-      object-fit: fill;
-      transform: scaleX(1.5);
       /*padding-right: 0.8rem;*/
+      }
+
+      .rt-container-info .info-card {
+        margin: 0;
+        padding: 0;
+      }
+
+
+      /*  Courses  */
+
+      .container-c {
+        padding: 1.5rem 1rem;
+      }
+
+      .container-c h2 {
+        padding-bottom: 1rem;
+        font-size: 2.2rem;
+      }
+
+      .course-container {
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+        padding: 0;
+        border: 1px solid blue;
+      }
+
+      .course img {
+        display: none;
+      }
+
+      .course {
+        display: block;
+        margin: 0 auto;
+        max-width: 100%;
+        border: 1px solid orange;
+      }
+
+      .course-text h3{
+        font-size: 1.1rem;
+        max-width: 100%;
+        text-align: left;
+        padding: 1rem 0;
+      }
+
+
+      .course-text a {
+        max-width: 100%;
+        padding: 2rem 10rem 2rem 0rem;
+      }
+
+
+      .course:nth-child(1n+1) {
+        margin: 0 0 0.5rem 0;
+        padding: 0;
+        width: 100%;
+      }
+
+
+      /*  Exhibit  */
+
+      .content-d {
+        margin: 0;
+        padding: 0;
+      }
+
+      .container-d h2 {
+        padding: 1rem;
+        font-size: 2.2rem;
+      }
+
+      .rt-container-exhibit {
+        display: none;
+      }
+
+      .lt-container-exhibit {
+        max-width: 100%;
+        padding: 0 0 1.5rem 0;
+      }
+
+      .lt-container-exhibit h4,
+      .lt-container-exhibit blockquote {
+        display: none;
+      }
+
+      video {
+        max-width: 100%;
+      }
+
+
+      /*  Footer  */
+
+      .copyright {
+        margin: 0.5rem 0;
+        padding: 0;
+      }
+
+      .footer ul {
+        display: none;
       }
