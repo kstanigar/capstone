@@ -44,14 +44,12 @@ h3 {
   opacity: .80;
 }
 
-
 blockquote {
   margin: 0 auto;
   font-family: "Crete Round", Sans;
   font-style: italic;
   line-height: 1.4rem;
   color: rgba(30,30,31,0.8);
-  /*border: 1px solid green;*/
 }
 
   p,
@@ -71,33 +69,17 @@ blockquote {
   text-decoration: none;
 }
 
-
-
 a:hover {
-  font-size: 102%;
-  opacity: 0.7;
   color: purple;
-}
-
-.desktop .button:hover {
-  font-size: 100%;
-  background: purple;
+  border-bottom: 1px solid purple;
+  filter: brightness(1.1);
+  transition: all 0.3s ease-in-out;
 }
 
 a:focus,
 .desktop .button:focus {
   color: grey;
 }
-
-.banner-button a:focus {
-  color: blue;
-}
-
-a {
-  transition: color 0.5s linear 0.2s;
-  transition: opacity 0.1s linear 0.2s;
-}
-
 
 /*  Header  */
 
@@ -116,7 +98,12 @@ a {
   font-size: 0;
   display: flex;
   align-items: center;
-  /*border: 1px solid orange;*/
+}
+.logo-container a:hover {
+  opacity: 0.7;
+  transition: opacity 0.3s ease-in-out;
+  border-bottom: none;
+  
 }
 
 .logo-container span{
@@ -131,6 +118,7 @@ a {
   height: 3.0rem;
   width: 2.3rem;
   border-right: 2px solid;
+
   /*  Border Gradient  */
     -webkit-border-image:
       -webkit-linear-gradient(black, rgba(0, 0, 0, 0)) 1 100%;
@@ -154,16 +142,17 @@ a {
   font-weight: 400;
 }
 
-
-
 /*  Navigation Section  */
-
 .desktop .button {
-  border: 1px solid grey;
-  padding: 0.4rem 0.3rem;
+  border: 2px solid rgb(0, 0, 0);
+  padding: 0.5rem 1rem;
   background: black;
   color: white;
-  border-radius: 0.5rem;
+  border-radius: 5px;
+}
+.desktop .button:hover {
+  background: purple;
+  border: 2px solid purple;
 }
 
 .desktop {
@@ -179,16 +168,14 @@ a {
 .desktop ul li {
   display: inline;
   padding: 0.15rem 0.25rem;
-  margin-left: .5rem;
-  /*border: 1px solid black;
-  border-radius: 5px;
-  background-color: grey;*/
+  margin-left: 0.5rem;
+  font-weight: bold;
 }
+
 
 .mobile {
   display: none;
 }
-
 
 
 /*  Banner Section  */
@@ -207,7 +194,6 @@ a {
   background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(208,181,139,1) 0%, rgba(249,244,235,1) 59%, rgba(249,244,235,1) 100%);
   background: linear-gradient(to bottom, rgba(255,255,255,1) 0%, rgba(208,181,139,1) 0%, rgba(249,244,235,1) 59%, rgba(249,244,235,1) 100%);
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#f9f4eb', GradientType=0 );
-  /*border: 1px solid orange;*/
 }
 
 .lt-container-banner {
@@ -224,7 +210,6 @@ a {
 
  .rt-container-banner {
    max-width: 30%;
-   /*margin-left: 1rem;*/  /* Add to look like wireframe  */
    display: flex;
    flex-direction: column;
    align-items: flex-start;
@@ -238,7 +223,7 @@ a {
  .banner-button {
    font-family: "Lato", sans-serif;
    border: rgba(150,130,98, 0.5);
-   border-radius: 0.5rem;
+   border-radius: 5px;
    padding: 1.5rem 8rem;
    color: white;
    margin: 0 1rem 0 1rem;
@@ -248,13 +233,16 @@ a {
    justify-content: center;
    flex-shrink: 2;
    background-color: rgba(38,40,56, 0.5);
-   /*border: 1px solid rgba(150,130,98, 0.2);*/
+   cursor: pointer;
  }
-
 
  .banner-button a {
    font-size: 1.2rem;
    flex-shrink: 0;
+ }
+
+ .banner-button a:hover {
+   border-bottom: none;
  }
 
 h1.first-line {
@@ -282,7 +270,7 @@ h1.first-line {
    text-align: right;
    font-family: "Lato", serif;
    font-style: italic;
-   line-height: 1.1rem;
+   line-height: 1.2rem;
    font-size: 1.1rem;
    font-weight: 400;
    padding: 0.4rem 0.8rem 0.4rem 2.5rem;
@@ -341,8 +329,6 @@ h1.first-line {
  .rt-container-info {
    width: 40%;
    margin: 0 0 0 1rem;
-   /*padding-left: 1rem;*/
-   display: inline;
  }
 
  .info-card {
@@ -376,10 +362,10 @@ h1.first-line {
    margin: .25rem;
    line-height: 1rem;
  }
+ .info-text > a {
+  padding-bottom: 2px;
+ }
 
- /*.info-card:nth-child(3n){
-   background-color: rgba(124,119,158,0.2)
- }*/
 
  h5 {
    margin: 0 auto;
@@ -520,7 +506,6 @@ h1.first-line {
   flex-direction: column;
   justify-content: flex-start;
   align-items: flex-start;
-  /*padding-left: 1rem;*/
 }
 
 .rt-container-exhibit .info-text h4 {
@@ -560,8 +545,6 @@ h1.first-line {
 
 
 /*   Media Query   */
-
-
 @media only screen and (max-width: 1100px) {
   .banner-button {
     padding: 1.5rem 6rem;
@@ -619,7 +602,6 @@ h1.first-line {
 
   blockquote,
   #banner h3,
-  li.
   .copyright {
     font-size: 0.9rem;
   }
@@ -719,9 +701,6 @@ h1.first-line {
   .rt-container-banner {
     padding-top: 2rem;
   }
-
-
-
   /*  Exhibit Section  */
 
   .rt-container-exhibit .info-card p {
@@ -744,10 +723,7 @@ h1.first-line {
     height: 20rem;
     }
 
-
-
   /*  Course Section  */
-
   .course p,
   .course h4 {
     display: none;
@@ -858,8 +834,6 @@ h1.first-line {
       margin: 2rem auto;
 
     }
-
-
 
     /*  Information  */
 
@@ -1010,3 +984,4 @@ h1.first-line {
       .footer ul {
         display: none;
       }
+    }
