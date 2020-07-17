@@ -20,7 +20,7 @@
   <header>
     <div class="header-container">
       <div class="logo-container">
-        <a href="#banner">
+        <a href="#foot">
           <img src="resources/images/ic-logo.svg" class="logo-image">
         </a>
         <span class="name-first">Colmar</span>
@@ -30,25 +30,25 @@
       <!-- Navigation Section  -->
       <nav class="desktop">
         <ul>
-          <li><a href="#">On Campus</a></li>
-          <li><a href="#">Online</a></li>
-          <li><a href="#">For Companies</a></li>
+          <li><a href="#learn">On Campus</a></li>
+          <li><a href="#courses">Online</a></li>
+          <li><a href="#exhibit">For Companies</a></li>
           <li><a class="button" href="#">Sign-In</a></li>
         </ul>
       </nav>
       <nav class="mobile">
         <span>
-          <a href="#">
+          <a href="#foot">
             <img class="mobile-image" src="resources/images/ic-logo.svg" alt="ic-logo-black">
           </a>
         </span>
         <span>
-          <a href="#">
+          <a href="#learn">
             <img src="resources/images/ic-on-campus.svg" alt="ic-on-campus-logo-black">
           </a>
         </span>
         <span>
-          <a href="#">
+          <a href="#top">
             <img src="resources/images/ic-online.svg" alt="ic-online-logo-black">
           </a>
         </span>
@@ -62,26 +62,25 @@
   </header>
 
   <!-- Main Content  -->
-
-  <div class="content-container">
+  <div id="top" class="content-container">
     <div class="container-a">
       <div class="lt-container-banner">
-        <!--<img class="mobile-image" src="resources/images/banner.jpg"
-          alt="overhead photo students reading books">-->
       </div>
       <div id="banner" class="rt-container-banner">
         <h1 class="first-line">Learn something</h1>
         <h1 class="sec-line">new everyday</h1>
         <h3>Knowledge is the key to opening our hidden treasures.</h3>
         <div class="banner-button">
-          <a href="#">Start Here</a>
+          <a href="#courses">
+            <button>Start here</button>
+          </a>
         </div>
       </div>
     </div>
 
     <!--  Information Section  -->
 
-    <div class="container-b">
+    <div id="learn" class="container-b">
       <div id="info" class="lt-container-info">
         <img class="info-image" src="resources/images/information-main.jpg" alt="Gentleman reading a book outside">
         <!--  Text / Quote -->
@@ -144,7 +143,7 @@
 
     <!--  Courses Section  -->
 
-    <div class="container-c">
+    <div id="courses" class="container-c">
       <h2>Start learning</h2>
       <div class="course-container">
 
@@ -227,7 +226,7 @@
         </div>
 
         <!-- Exhibit Right Container  -->
-        <div class="rt-container-exhibit">
+        <div id="exhibit" class="rt-container-exhibit">
           <div class="info-card">
             <img src="resources/images/thesis-fisma.jpg" alt="Overhead view of design plans">
             <div class="info-text">
@@ -251,7 +250,7 @@
     </div>
 
     <!--  Footer Section  -->
-    <div class="footer">
+    <div id="foot" class="footer">
       <div class="copyright">© Colmar Academy. All rights reserved</div>
       <ul class="terms">
         <li><a href="#">Terms</a></li>

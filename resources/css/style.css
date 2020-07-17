@@ -7,6 +7,7 @@ html, body {
   margin: 0 auto;
   padding: 0;
   opacity: 0.95;
+  scroll-behavior: smooth;
 }
 
 ul li a,
@@ -69,16 +70,16 @@ blockquote {
   text-decoration: none;
 }
 
+.desktop > a,
+.desktop .button:focus {
+  color: grey;
+}
+
 a:hover {
   color: purple;
   border-bottom: 1px solid purple;
   filter: brightness(1.1);
   transition: all 0.3s ease-in-out;
-}
-
-a:focus,
-.desktop .button:focus {
-  color: grey;
 }
 
 /*  Header  */
@@ -109,6 +110,8 @@ a:focus,
 .logo-container span{
   font-size: 1.3rem;
   text-transform: uppercase;
+  text-shadow: 2px 2px 5px rgba(38,40,56, 0.5);
+  
 }
 
 .logo-image {
@@ -153,6 +156,7 @@ a:focus,
 .desktop .button:hover {
   background: purple;
   border: 2px solid purple;
+  box-shadow: 2px 2px 5px rgba(38,40,56, 0.5);
 }
 
 .desktop {
@@ -210,35 +214,35 @@ a:focus,
 
  .rt-container-banner {
    max-width: 30%;
-   display: flex;
+   display: block;
    flex-direction: column;
    align-items: flex-start;
    justify-content: flex-start;
    padding-top: 4.4rem;
-   overflow: auto;
    background-color: rgba(183,126,255,0.2);
    border: 1px solid rgba(150,130,98, 0.2);
+   text-align: center;
  }
-
- .banner-button {
-   font-family: "Lato", sans-serif;
-   border: rgba(150,130,98, 0.5);
-   border-radius: 5px;
-   padding: 1.5rem 8rem;
+ 
+ .banner-button a button {
+   font-size: 1rem;
    color: white;
-   margin: 0 1rem 0 1rem;
-   max-width: 8rem;
-   display: flex;
-   min-width: 1rem;
-   justify-content: center;
-   flex-shrink: 2;
+   margin: 0 auto;
    background-color: rgba(38,40,56, 0.5);
+   text-align: center;
+   border-radius: 10px;
+   width: 8rem;
+   height: 3rem;
    cursor: pointer;
+   text-transform: uppercase;
+   border: none;
+   transition: all 0.2s ease-in-out;
  }
 
- .banner-button a {
-   font-size: 1.2rem;
-   flex-shrink: 0;
+ .banner-button a button:hover {
+   box-shadow: none;
+   background: purple;
+   box-shadow: 2px 2px 5px rgba(38,40,56, 0.5);
  }
 
  .banner-button a:hover {
